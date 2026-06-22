@@ -11,11 +11,11 @@ import { SITE } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Бонусы казино 2026, офферы на баланс',
   description:
-    'Актуальные бонусы онлайн-казино 2026: офферы на баланс, рейтинг предложений и партнерские ссылки SlotMaster.',
+    'Актуальные бонусы онлайн-казино 2026: офферы на баланс, рейтинг предложений и быстрые переходы к акциям.',
   alternates: { canonical: '/bonuses' },
   openGraph: {
     title: 'Бонусы казино 2026 | SlotMaster',
-    description: 'Бонусы на баланс и партнерские офферы SlotMaster.',
+    description: 'Бонусы на баланс и актуальные предложения SlotMaster.',
     url: `${SITE.url}/bonuses`,
   },
 };

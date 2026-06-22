@@ -22,7 +22,7 @@ export function Hero() {
           }}
         >
           <Image
-            src="/assets/slotmaster/hero-dragon.png"
+            src="/assets/slotmaster/hero-slot-premium.png"
             alt="Промо-ассет SlotMaster"
             fill
             priority
