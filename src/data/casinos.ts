@@ -47,7 +47,7 @@ const rawCasinos: Casino[] = [
     ],
     specs: [
       { label: 'Валюта', value: 'RUB' },
-      { label: 'Минимальное пополнение', value: 'от 500 ₽' },
+      { label: 'Минимальное пополнение', value: 'от 100 ₽' },
       { label: 'Переход', value: 'основная кнопка SlotMaster' },
       { label: 'Главный оффер', value: 'до +1000 ₽ на баланс' },
       { label: 'Поддержка', value: 'чат, Telegram, e-mail' },
