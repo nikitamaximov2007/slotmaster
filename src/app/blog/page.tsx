@@ -45,11 +45,11 @@ export default function BlogPage() {
           fill
           priority
           sizes="100vw"
-          className="pointer-events-none scale-[1.02] object-cover object-[58%_center] opacity-95 transition duration-500 group-hover:scale-[1.04]"
+          className="pointer-events-none scale-[1.02] object-cover object-[58%_center] opacity-100 brightness-[1.14] saturate-[1.18] transition duration-500 group-hover:scale-[1.04]"
         />
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(11,16,32,0.99)_0%,rgba(11,16,32,0.98)_32%,rgba(11,16,32,0.9)_48%,rgba(11,16,32,0.62)_68%,rgba(11,16,32,0.22)_100%)]" />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_62%_50%,rgba(45,109,178,0.2)_0%,rgba(45,109,178,0.08)_28%,transparent_58%)]" />
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(5,7,15,0.12)_0%,rgba(5,7,15,0.66)_100%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(11,16,32,0.97)_0%,rgba(11,16,32,0.9)_32%,rgba(11,16,32,0.66)_50%,rgba(11,16,32,0.28)_72%,rgba(11,16,32,0.04)_100%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_62%_50%,rgba(45,109,178,0.14)_0%,rgba(45,109,178,0.04)_28%,transparent_58%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(5,7,15,0.02)_0%,rgba(5,7,15,0.36)_100%)]" />
         <div className="relative z-10 flex min-h-[300px] max-w-2xl flex-col justify-center p-6 sm:min-h-[330px] sm:p-8">
           <span className="mb-3 w-fit rounded-full bg-blue/20 px-3 py-1 text-xs font-bold text-blue-bright backdrop-blur-md">
             Рекомендуем
