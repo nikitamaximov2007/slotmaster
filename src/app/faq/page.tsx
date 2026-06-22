@@ -26,13 +26,13 @@ export default function FaqPage() {
   return (
     <div className="container-site pb-16">
       <Breadcrumbs items={[{ label: 'FAQ' }]} />
-      <section className="relative isolate mt-2 min-h-[330px] overflow-hidden rounded-[22px] border border-edge bg-surface px-5 py-10 shadow-[0_30px_90px_-62px_rgba(56,189,248,0.5)] sm:min-h-[380px] sm:px-8 lg:px-10 lg:py-14">
+      <section className="relative isolate mt-2 min-h-[390px] overflow-hidden rounded-[22px] border border-edge bg-surface px-5 py-10 shadow-[0_30px_90px_-62px_rgba(56,189,248,0.5)] sm:min-h-[430px] sm:px-8 lg:px-10 lg:py-14">
         <Image
           src={generatedImages.pages.faq}
           alt="FAQ SlotMaster: ответы на вопросы игроков"
           fill
           sizes="100vw"
-          className="pointer-events-none object-cover object-right opacity-95 saturate-[1.12]"
+          className="pointer-events-none object-cover object-[72%_34%] opacity-95 saturate-[1.12]"
           priority
         />
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(5,7,15,0.98)_0%,rgba(5,7,15,0.86)_42%,rgba(5,7,15,0.38)_72%,rgba(5,7,15,0.1)_100%)]" />
