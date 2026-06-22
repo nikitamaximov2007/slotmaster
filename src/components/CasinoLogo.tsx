@@ -84,9 +84,16 @@ function Glyph({
   name: string;
 }) {
   if (imageSrc) {
+    const fullBleed = slug === 'dragon-money';
     return (
       <span className={`relative block shrink-0 overflow-hidden bg-[#0b1020] ring-1 ring-white/10 ${glyphBox[size]}`}>
-        <Image src={imageSrc} alt={`Логотип ${name}`} fill sizes={`${imgPx[size]}px`} className="object-contain p-1.5" />
+        <Image
+          src={imageSrc}
+          alt={`Логотип ${name}`}
+          fill
+          sizes={`${imgPx[size]}px`}
+          className={fullBleed ? 'rounded-[inherit] object-cover' : 'object-contain p-1.5'}
+        />
       </span>
     );
   }
