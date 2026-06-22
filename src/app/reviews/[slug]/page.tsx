@@ -110,8 +110,9 @@ export default async function ReviewPage({ params }: PageProps) {
           fill
           priority
           sizes="100vw"
-          className="pointer-events-none object-cover opacity-100 saturate-[1.18]"
-          style={{ objectPosition: casino.slug === 'dragon-money' ? 'right center' : 'center' }}
+          className={`pointer-events-none object-cover opacity-100 saturate-[1.18] ${
+            casino.slug === 'dragon-money' ? 'object-[84%_center] md:object-right' : 'object-center'
+          }`}
         />
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(5,7,15,0.96)_0%,rgba(5,7,15,0.78)_34%,rgba(5,7,15,0.24)_64%,rgba(5,7,15,0.02)_100%)]" />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(168,85,247,0.16),transparent_34%),linear-gradient(180deg,rgba(5,7,15,0)_0%,rgba(5,7,15,0.32)_100%)]" />
