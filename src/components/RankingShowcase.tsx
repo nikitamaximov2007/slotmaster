@@ -63,12 +63,13 @@ function FeaturedCard({ casino }: { casino: Casino }) {
 
         <div className="mt-5">
           {casino.logoImage ? (
-            <Image
-              src={casino.logoImage}
-              alt={`Логотип ${casino.name}`}
-              width={168}
-              height={60}
-              className="h-11 w-auto object-contain drop-shadow-[0_12px_30px_rgba(0,0,0,0.65)]"
+            <CasinoLogo
+              name={casino.name}
+              gradient={casino.logoGradient}
+              slug={casino.slug}
+              imageSrc={casino.logoImage}
+              size="lg"
+              markOnly
             />
           ) : (
             <p className="font-display text-2xl font-bold text-primary">{casino.name}</p>
