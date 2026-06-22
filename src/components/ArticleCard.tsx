@@ -5,8 +5,8 @@ import type { Article } from '@/types';
 
 export function ArticleCard({ article, priority = false }: { article: Article; priority?: boolean }) {
   return (
-    <article className="group flex flex-col overflow-hidden rounded-card border border-edge bg-surface transition hover:border-edge-active hover:shadow-card">
-      <Link href={`/blog/${article.slug}`} className="relative block aspect-[16/9] overflow-hidden">
+    <article className="group min-w-0 flex flex-col overflow-hidden rounded-card border border-edge bg-surface transition hover:border-edge-active hover:shadow-card">
+      <Link href={`/blog/${article.slug}`} className="relative block min-w-0 aspect-[16/9] overflow-hidden">
         <Image
           src={article.image}
           alt={article.title}
@@ -19,14 +19,14 @@ export function ArticleCard({ article, priority = false }: { article: Article; p
           {article.category}
         </span>
       </Link>
-      <div className="flex flex-1 flex-col p-4">
+      <div className="min-w-0 flex flex-1 flex-col p-4">
         <h3 className="text-[1.02rem] font-bold leading-snug text-primary">
-          <Link href={`/blog/${article.slug}`} className="transition hover:text-blue-bright">
+          <Link href={`/blog/${article.slug}`} className="break-words transition hover:text-blue-bright">
             {article.title}
           </Link>
         </h3>
-        <p className="mt-2 flex-1 text-sm text-muted">{article.excerpt}</p>
-        <div className="mt-3 flex items-center gap-2 text-xs text-muted">
+        <p className="mt-2 min-w-0 flex-1 break-words text-sm text-muted">{article.excerpt}</p>
+        <div className="mt-3 flex min-w-0 flex-wrap items-center gap-2 text-xs text-muted">
           <span>{article.date}</span>
           <span className="h-0.5 w-0.5 rounded-full bg-muted" />
           <span className="flex items-center gap-1">

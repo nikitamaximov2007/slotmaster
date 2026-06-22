@@ -22,9 +22,9 @@ export function BlogExplorer({ articles, categories }: { articles: Article[]; ca
   const shown = filtered.slice(0, visible);
 
   return (
-    <div>
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-        <div className="relative flex-1">
+    <div className="min-w-0">
+      <div className="flex min-w-0 flex-col gap-3 sm:flex-row sm:items-center">
+        <div className="relative min-w-0 flex-1">
           <Search size={16} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
           <input
             type="search"
@@ -38,7 +38,7 @@ export function BlogExplorer({ articles, categories }: { articles: Article[]; ca
             className="h-11 w-full rounded-lg border border-edge bg-surface pl-9 pr-3 text-sm text-primary outline-none transition focus:border-edge-active"
           />
         </div>
-        <div className="scroll-rail flex gap-2 overflow-x-auto">
+        <div className="scroll-rail flex max-w-full min-w-0 gap-2 overflow-x-auto">
           {(['Все', ...categories] as const).map((c) => (
             <button
               key={c}
@@ -58,7 +58,7 @@ export function BlogExplorer({ articles, categories }: { articles: Article[]; ca
       </div>
 
       {shown.length > 0 ? (
-        <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-6 grid min-w-0 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {shown.map((a) => (
             <ArticleCard key={a.slug} article={a} />
           ))}

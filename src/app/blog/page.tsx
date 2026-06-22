@@ -66,10 +66,10 @@ export default function BlogPage() {
         </div>
       </Link>
 
-      <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_280px]">
+      <div className="mt-8 grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1fr)_280px]">
         <BlogExplorer articles={rest} categories={articleCategories} />
 
-        <aside className="space-y-5">
+        <aside className="min-w-0 space-y-5">
           <div className="rounded-card border border-edge bg-surface p-5 lg:sticky lg:top-[88px]">
             <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted">Популярное</h2>
             <ul className="space-y-3">
