@@ -84,7 +84,7 @@ function Glyph({
   name: string;
 }) {
   if (imageSrc) {
-    const fullBleed = slug === 'dragon-money';
+    const fullBleed = slug === 'dragon-money' || imageSrc.startsWith('/assets/logos/');
     return (
       <span className={`relative block shrink-0 overflow-hidden bg-[#0b1020] ring-1 ring-white/10 ${glyphBox[size]}`}>
         <Image
