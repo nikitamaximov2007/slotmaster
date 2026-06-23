@@ -13,12 +13,14 @@ export function Hero() {
     <section className="relative isolate pt-5">
       <div className="relative isolate min-h-[560px] overflow-hidden bg-[radial-gradient(circle_at_76%_42%,rgba(91,124,255,0.2),transparent_34%),radial-gradient(circle_at_88%_76%,rgba(245,196,81,0.13),transparent_28%),linear-gradient(135deg,#050814_0%,#070b18_48%,#100d18_100%)] sm:min-h-[460px] lg:min-h-[410px]">
         <div
-          className="pointer-events-none absolute -right-[22%] bottom-0 z-[1] h-[86%] w-[130%] opacity-48 sm:-right-[14%] sm:h-[108%] sm:w-[88%] sm:opacity-76 lg:-right-[8%] lg:h-[116%] lg:w-[72%] lg:opacity-100"
+          className="pointer-events-none absolute -right-[28%] bottom-[-4%] z-[1] h-[94%] w-[140%] opacity-48 sm:-right-[18%] sm:h-[114%] sm:w-[96%] sm:opacity-76 lg:-right-[10%] lg:h-[122%] lg:w-[82%] lg:opacity-100"
           style={{
             WebkitMaskImage:
-              'linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.12) 10%, rgba(0,0,0,0.58) 24%, #000 42%, #000 100%)',
+              'linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.04) 12%, rgba(0,0,0,0.2) 26%, rgba(0,0,0,0.56) 44%, rgba(0,0,0,0.9) 62%, #000 82%, rgba(0,0,0,0.72) 100%), linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.8) 12%, #000 28%, #000 78%, rgba(0,0,0,0.75) 90%, transparent 100%)',
             maskImage:
-              'linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.12) 10%, rgba(0,0,0,0.58) 24%, #000 42%, #000 100%)',
+              'linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.04) 12%, rgba(0,0,0,0.2) 26%, rgba(0,0,0,0.56) 44%, rgba(0,0,0,0.9) 62%, #000 82%, rgba(0,0,0,0.72) 100%), linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.8) 12%, #000 28%, #000 78%, rgba(0,0,0,0.75) 90%, transparent 100%)',
+            WebkitMaskComposite: 'source-in',
+            maskComposite: 'intersect',
           }}
         >
           <Image
