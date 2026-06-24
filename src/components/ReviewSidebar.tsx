@@ -28,7 +28,7 @@ export function ReviewSidebar({ casino }: { casino: Casino }) {
       </AffiliateButton>
 
       <p className="mt-3 text-[0.7rem] text-muted">
-        18+ · Партнёрская ссылка · Играйте ответственно
+        18+ · Играйте ответственно
       </p>
     </section>
   );
