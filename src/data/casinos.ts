@@ -54,14 +54,14 @@ const rawCasinos: Casino[] = [
       { label: 'Формат', value: 'слоты, live-игры, быстрые игры' },
     ],
     popularSlots: [
-      { name: 'Gates of Olympus', image: '/assets/slots/gates-of-olympus.webp', provider: 'Pragmatic Play' },
-      { name: 'Sweet Bonanza', image: '/assets/slots/sweet-bonanza.webp', provider: 'Pragmatic Play' },
-      { name: 'Big Bass Bonanza', image: '/assets/slots/big-bass-bonanza.webp', provider: 'Pragmatic Play' },
-      { name: 'Book of Dead', image: '/assets/slots/book-of-dead.webp', provider: "Play'n GO" },
-      { name: 'Wolf Gold', image: '/assets/slots/wolf-gold.webp', provider: 'Pragmatic Play' },
-      { name: 'Sugar Rush', image: '/assets/slots/sugar-rush.webp', provider: 'Pragmatic Play' },
-      { name: 'Starlight Princess', image: '/assets/slots/starlight-princess.webp', provider: 'Pragmatic Play' },
-      { name: 'Reactoonz', image: '/assets/slots/reactoonz.webp', provider: "Play'n GO" },
+      { name: 'Gates of Olympus', image: '/assets/slot-covers/gates-of-olympus.webp', provider: 'Pragmatic Play' },
+      { name: 'Sweet Bonanza', image: '/assets/slot-covers/sweet-bonanza.webp', provider: 'Pragmatic Play' },
+      { name: 'Big Bass Bonanza', image: '/assets/slot-covers/big-bass-bonanza.webp', provider: 'Pragmatic Play' },
+      { name: 'Book of Dead', image: '/assets/slot-covers/book-of-dead.webp', provider: "Play'n GO" },
+      { name: 'Wolf Gold', image: '/assets/slot-covers/wolf-gold.webp', provider: 'Pragmatic Play' },
+      { name: 'Sugar Rush', image: '/assets/slot-covers/sugar-rush.webp', provider: 'Pragmatic Play' },
+      { name: 'Starlight Princess', image: '/assets/slot-covers/starlight-princess.webp', provider: 'Pragmatic Play' },
+      { name: 'Reactoonz', image: '/assets/slot-covers/reactoonz.webp', provider: "Play'n GO" },
     ],
     reviewSections: [
       {

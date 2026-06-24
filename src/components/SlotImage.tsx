@@ -28,7 +28,7 @@ export function SlotImage({
         fill
         priority={priority}
         sizes={sizes}
-        className="object-contain p-2 drop-shadow-[0_16px_30px_rgba(0,0,0,0.42)]"
+        className="object-cover drop-shadow-[0_16px_30px_rgba(0,0,0,0.42)]"
       />
     </>
   );
