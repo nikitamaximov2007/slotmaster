@@ -84,16 +84,18 @@ function Glyph({
   name: string;
 }) {
   if (imageSrc) {
-    const fullBleed = slug === 'dragon-money' || imageSrc.startsWith('/assets/logos/');
+    const isLogoAsset = imageSrc.startsWith('/assets/logos/');
+    const fullBleed = slug === 'dragon-money' || isLogoAsset;
     return (
-      <span className={`relative block shrink-0 overflow-hidden bg-[#0b1020] ring-1 ring-white/10 ${glyphBox[size]}`}>
+      <span className={`relative block shrink-0 overflow-hidden bg-[#0b1020] shadow-[0_8px_22px_rgba(0,0,0,0.22)] ring-1 ring-white/[0.14] ${glyphBox[size]}`}>
         <Image
           src={imageSrc}
           alt={`Логотип ${name}`}
           fill
           sizes={`${imgPx[size]}px`}
-          className={fullBleed ? 'rounded-[inherit] object-cover' : 'object-contain p-1.5'}
+          className={isLogoAsset ? 'scale-[1.32] rounded-[inherit] object-cover' : fullBleed ? 'rounded-[inherit] object-cover' : 'object-contain p-1.5'}
         />
+        <span className="pointer-events-none absolute inset-0 rounded-[inherit] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.14),inset_0_0_0_3px_rgba(5,7,15,0.56)]" />
       </span>
     );
   }
