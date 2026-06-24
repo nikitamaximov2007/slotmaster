@@ -1,21 +1,20 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Win } from '@/types';
+import { SlotImage } from './SlotImage';
 
 // Live-wins feed. Row variant (homepage) + card variant (wins page).
 export function WinCard({ win, variant = 'row' }: { win: Win; variant?: 'row' | 'card' }) {
   if (variant === 'card') {
     return (
       <article className="overflow-hidden rounded-lg border border-edge bg-surface shadow-card transition hover:-translate-y-0.5 hover:border-edge-strong">
-        <div className="relative aspect-[16/10] overflow-hidden">
-          <Image
+        <div className="relative aspect-video overflow-hidden bg-[#070b16]">
+          <SlotImage
             src={win.slotImage}
-            alt={`Обложка слота ${win.slot}`}
-            fill
+            name={win.slot}
             sizes="(max-width: 768px) 50vw, 25vw"
-            className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-surface/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-surface/86 via-surface/16 to-transparent" />
           <span className="absolute right-2 top-2 rounded-md bg-background/80 px-2 py-1 font-display text-sm font-bold text-green">
             {win.amount}
           </span>

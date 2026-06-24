@@ -7,9 +7,9 @@ export function SlotCard({ slot, priority = false }: { slot: Slot; priority?: bo
 
   return (
     <article className="overflow-hidden rounded-card border border-edge bg-surface transition hover:-translate-y-0.5 hover:border-edge-strong">
-      <div className="relative aspect-[16/10] overflow-hidden">
+      <div className="relative aspect-video overflow-hidden bg-[#070b16]">
         <SlotImage src={slot.image} name={slot.name} priority={priority} />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/75 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/82 via-background/12 to-transparent" />
         <span className="absolute left-2 top-2 rounded-md bg-background/80 px-2 py-1 text-[0.65rem] font-bold text-blue-bright">
           {slot.provider}
         </span>
