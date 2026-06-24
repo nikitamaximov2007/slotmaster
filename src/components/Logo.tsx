@@ -5,13 +5,13 @@ import { SITE } from '@/lib/site';
 export function Logo({ withTagline = true }: { withTagline?: boolean }) {
   return (
     <Link href="/" className="flex items-center gap-2.5" aria-label={`${SITE.name}, на главную`}>
-      <span className="relative block h-10 w-10 shrink-0 overflow-hidden rounded-lg shadow-[0_12px_28px_rgba(245,196,81,0.22)] ring-1 ring-gold/35">
+      <span className="relative block h-10 w-10 shrink-0 overflow-hidden rounded-lg shadow-[0_12px_28px_rgba(245,196,81,0.18)]">
         <Image
           src="/assets/logos/slotmaster-logo.png"
           alt=""
           fill
           sizes="40px"
-          className="object-cover"
+          className="scale-[1.28] object-cover"
           aria-hidden="true"
         />
       </span>
